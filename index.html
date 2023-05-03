@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+  <!-- Utilizes the color scheme api -->
+  <!-- https://www.thecolorapi.com/ -->
+  <link rel="stylesheet" href="./index.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <main>
+    <header>
+      <form id="new-scheme-form">
+        <input type="color" id="color-input" value="#F55A5A" class="input-height"/>
+
+        <div id="scheme-select-container">
+          <div id="scheme-select" class="select-text input-height select-items">
+            <span id="scheme-type">Select scheme type</span>
+            <i class="fa-sharp fa-solid fa-angle-down"></i>
+          </div>
+          <div id="scheme-select-options" class="scheme-select-options select-items hidden"></div>
+        </div>
+        <button id="get-scheme-btn" class="input-height" disabled>
+          Get Color Scheme
+        </button>
+      </form>
+    </header>
+    <section id="colors">
+    </section>
+  </main>
+  <script src="./index.js" type="module"></script>
+</body>
